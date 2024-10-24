@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = LocalizationManager.current["HomePageTitle"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        @{
+            if (User.Identity.IsAuthenticated) {
+                <span>Пользователь вошел в систему</span>
+            }else {
+                <span>Пользователь не вошел в систему</span>
+            }
+        }
+    </h1>
+</div>

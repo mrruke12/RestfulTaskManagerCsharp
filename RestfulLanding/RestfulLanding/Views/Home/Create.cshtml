@@ -1,0 +1,95 @@
+﻿@model Objective
+
+@{
+    ViewData["Title"] = LocalizationManager.current["CreatePageTitle"];
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">@LocalizationManager.current["CreatePageTitle"]</h2>
+
+    <form asp-action="Create" method="post" class="card p-4 shadow">
+        <div class="form-group mb-3">
+            <label asp-for="title" class="form-label">@LocalizationManager.current["NewObjectiveTitleLabel"]</label>
+            <input asp-for="title" class="form-control" placeholder="@LocalizationManager.current["NewObjectiveTitlePlaceholder"]" required />
+            <span asp-validation-for="title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="due" class="form-label">@LocalizationManager.current["NewObjectiveDueLabel"]</label>
+            <input asp-for="due" type="date" class="form-control"/>
+            <span asp-validation-for="due" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="priority" class="form-label">@LocalizationManager.current["NewObjectivePriorityLabel"]</label>
+            <select asp-for="priority" class="form-select">
+                <option value="0">@LocalizationManager.current["PriorityLowOption"]</option>
+                <option value="1" selected>@LocalizationManager.current["PriorityNormalOption"]</option>
+                <option value="2">@LocalizationManager.current["PriorityHighOption"]</option>
+            </select>
+            <span asp-validation-for="priority" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-4">
+            <label asp-for="urgency" class="form-label">@LocalizationManager.current["NewObjectiveUrgencyLabel"]</label>
+            <select asp-for="urgency" class="form-select">
+                <option value="0">@LocalizationManager.current["UrgencyLowOption"]</option>
+                <option value="1" selected>@LocalizationManager.current["UrgencyNormalOption"]</option>
+                <option value="2">@LocalizationManager.current["UrgencyHighOption"]</option>
+            </select>
+            <span asp-validation-for="urgency" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <input type="submit" value="@LocalizationManager.current["CreateNewObjectiveButton"]" class="btn btn-primary btn-lg" />
+        </div>
+    </form>
+</div>
+
+
+@* @model Objective
+
+@{
+    ViewData["Title"] = LocalizationManager.current["CreatePageTitle"];
+}
+
+<h2>Create Task</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="title" class="control-label">@LocalizationManager.current["NewObjectiveTitleLabel"]</label>
+        <input asp-for="title" class="form-control" placeholder="@LocalizationManager.current["NewObjectiveTitlePlaceholder"]" required />
+        <span asp-validation-for="title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="due" class="control-label">@LocalizationManager.current["NewObjectiveDueLabel"]</label>
+        <input asp-for="due" type="date" class="form-control"/>
+        <span asp-validation-for="due" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="priority" class="control-label">@LocalizationManager.current["NewObjectivePriorityLabel"]</label>
+        <select asp-for="priority" class="form-control">
+            <option value="0">@LocalizationManager.current["PriorityLowOption"]</option>
+            <option value="1" selected>@LocalizationManager.current["PriorityNormalOption"]</option>
+            <option value="2">@LocalizationManager.current["PriorityHighOption"]</option>
+        </select>
+        <span asp-validation-for="priority" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="urgency" class="control-label">@LocalizationManager.current["NewObjectiveUrgencyLabel"]</label>
+        <select asp-for="urgency" class="form-control">
+            <option value="0">@LocalizationManager.current["UrgencyLowOption"]</option>
+            <option value="1" selected>@LocalizationManager.current["UrgencyNormalOption"]</option>
+            <option value="2">@LocalizationManager.current["UrgencyHighOption"]</option>
+        </select>
+        <span asp-validation-for="urgency" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="@LocalizationManager.current["CreateNewObjectiveButton"]" class="btn btn-primary" />
+    </div>
+</form>
+ *@
