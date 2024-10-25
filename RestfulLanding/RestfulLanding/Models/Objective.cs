@@ -1,21 +1,24 @@
-﻿namespace RestfulLanding.Models {
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
+
+namespace RestfulLanding.Models {
     public enum Priority { low, normal, high };
     public enum Urgency { low, normal, high  };
+    public enum Status { inwork, none, done };
     public class Objective {
-        public Priority priority;
-        public Urgency urgency;
-        public string title;
-        public DateTime due = default;
-
-        public Objective(Priority priority, Urgency urgency, string title, DateTime due = default) {
-            this.priority = priority;
-            this.urgency = urgency;
-            this.title = title;
-            this.due = due;
-        }
+        [Key]
+        public int Id { get; set; }
+        public string userId { get; set; }
+        public User user { get; set; }
+        public Priority priority { get; set; }
+        public Urgency urgency { get; set; }
+        public Status status { get; set; }
+        public string description { get; set; }
+        public DateTime? due { get; set; } = default;
 
         public override string ToString() {
-            return $"{title} {(due != default ? $"(срок до {due.ToString("g")})" : "")}";
+            return $"{description} {(due != DateTime.MaxValue ? $"(срок до {due?.ToString("g")})" : "")}";
         }
     }
 

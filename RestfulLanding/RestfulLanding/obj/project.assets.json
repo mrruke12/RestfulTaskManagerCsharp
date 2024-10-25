@@ -4080,11 +4080,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
       "projectName": "RestfulLanding",
-      "projectPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLanding\\RestfulLanding\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,15 +1,128 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.WebUtilities
+@model List<Objective>
+@{
     ViewData["Title"] = LocalizationManager.current["HomePageTitle"];
 }
 
-<div class="text-center">
-    <h1 class="display-4">
-        @{
-            if (User.Identity.IsAuthenticated) {
-                <span>Пользователь вошел в систему</span>
-            }else {
-                <span>Пользователь не вошел в систему</span>
+@functions {
+    public string GetSelected(int? filterBy, int value) {
+        return filterBy == value ? "selected" : "";
+    }
+}
+
+@{
+    if (!User.Identity.IsAuthenticated) {
+        <div class="container d-flex justify-content-center align-items-center" style="height: 80vh; width: 100%;">
+            <div class="row">
+                <div class="">
+                    <div class="alert alert-info text-center" role="alert">
+                        <h4 class="alert-heading">@LocalizationManager.current["WelcomeAlert"]</h4>
+                        <p>@LocalizationManager.current["LoginOrRegisterRequired"]</p>
+                        <hr>
+                        <a href="@Url.Action("Login", "Auth")" class="btn btn-primary mt-3">@LocalizationManager.current["LoginPageTitle"]</a>
+                        <a href="@Url.Action("Register", "Auth")" class="btn btn-secondary mt-3">@LocalizationManager.current["RegisterPageTitle"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    } else {
+        // if (Model == null || Model.Count == 0) {
+            
+        // }
+        <style>
+            .task-container {
+                max-height: 400px; /* Устанавливаем максимальную высоту для прокрутки */
+                overflow-y: auto; /* Включаем вертикальную прокрутку */
             }
-        }
-    </h1>
-</div>
+        </style>
+
+        <div class="container mt-5">
+            <h2>@LocalizationManager.current["ListOfObjectivesTitle"]</h2>
+
+            <form method="get" class="mb-3">
+                <label for="FilterBy">@LocalizationManager.current["FilterLabel"]</label>
+                <input type="hidden" id="FilterByValue" value="@ViewBag.FilterBy" />
+                <select name="FilterBy" id="FilterBy" class="form-control" onchange="this.form.submit()">
+                    <option value="0">@LocalizationManager.current["FilterByAlphabet"]</option>
+                    <option value="1">@LocalizationManager.current["FilterByStatus"]</option>
+                    <option value="2">@LocalizationManager.current["FilterByPriorityAscending"]</option>
+                    <option value="3">@LocalizationManager.current["FilterByPriorityDescending"]</option>
+                    <option value="4">@LocalizationManager.current["FilterByUrgencyAscending"]</option>
+                    <option value="5">@LocalizationManager.current["FilterByUrgencyDescending"]</option>
+                    <option value="6">@LocalizationManager.current["FilterByDue"]</option>
+                </select>
+            </form>
+
+            <div class="task-container">
+                @foreach (var task in Model) {
+                    <div class="card mb-3 task-card" data-priority="@task.priority" data-status="@task.status">
+                        <div class="card-body text-center">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12 mb-2">
+                                    <h5 class="card-title">@task.description</h5>
+                                    @if (task.due != DateTime.MaxValue) {
+                                        <p class="card-text text-primary"><strong>@LocalizationManager.current["DueAt"]:</strong> @task.due.Value.ToShortDateString()</p>
+                                    }
+                                </div>
+                                <div class="col-md-3 col-12 mb-2">
+                                    <p class="card-text">
+                                        <strong>@LocalizationManager.current["PriorityLabel"]:</strong>
+                                            @if (task.priority == Priority.low) {
+                                                <span class="text-success">@LocalizationManager.current["PriorityLowOption"]</span>
+                                            } else if (task.priority == Priority.normal) {
+                                                <span class="text-warning">@LocalizationManager.current["PriorityNormalOption"]</span>
+                                            } else if (task.priority == Priority.high) {
+                                                <span class="text-danger">@LocalizationManager.current["PriorityHighOption"]</span>
+                                            }
+                                        <br />
+                                        <strong>@LocalizationManager.current["UrgencyLabel"]:</strong>
+                                            @if (task.urgency == Urgency.low) {
+                                                <span class="text-success">@LocalizationManager.current["UrgencyLowOption"]</span>
+                                            } else if (task.urgency == Urgency.normal) {
+                                                <span class="text-warning">@LocalizationManager.current["UrgencyNormalOption"]</span>
+                                            } else if (task.urgency == Urgency.high) {
+                                                <span class="text-danger">@LocalizationManager.current["UrgencyHighOption"]</span>
+                                            }
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-12 mb-2">
+                                    <p class="card-text"><strong>@LocalizationManager.current["StatusLabel"]:</strong>
+                                        @if (task.status == Status.none) {
+                                            <span class="text-info">@LocalizationManager.current["StatusNone"]</span>
+                                        } else if (task.status == Status.inwork) {
+                                            <span class="text-warning">@LocalizationManager.current["StatusInWork"]</span>
+                                        } else if (task.status == Status.done) {
+                                            <span class="text-success">@LocalizationManager.current["StatusDone"]</span>
+                                        }
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-12 mb-2 d-flex justify-content-center">
+                                    <form asp-action="Edit" asp-controller="Objective" method="get" style="margin-right: 5px;">
+                                        <input name="ReturnUrl" type="hidden" value="@(Context.Request.Path + Context.Request.QueryString)" />
+                                        <input name="objectiveId" type="hidden" value="@task.Id" />
+                                        <input type="submit" class="btn btn-edit btn-danger" value="@LocalizationManager.current["EditObjectiveButton"]" />
+                                    </form>
+
+                                    <form asp-action="Delete" asp-controller="Objective" method="post" onsubmit="return confirm(@LocalizationManager.current["AreYouSureToDelete"])">
+                                        <input name="ReturnUrl" type="hidden" value="@(Context.Request.Path + Context.Request.QueryString)" />
+                                        <input name="objectiveId" type="hidden" value="@task.Id" />
+                                        <input type="submit" class="btn btn-edit btn-danger" value="@LocalizationManager.current["DeleteObjectiveButton"]" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const val = document.querySelector("#FilterByValue").value
+                document.querySelector("#FilterBy").querySelectorAll("option").forEach(e => {
+                    if (e.value == val) e.setAttribute("selected", "selected")
+                })
+            })
+        </script>
+    }
+}

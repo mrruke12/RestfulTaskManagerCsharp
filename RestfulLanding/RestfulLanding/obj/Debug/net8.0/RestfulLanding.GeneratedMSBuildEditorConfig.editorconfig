@@ -9,51 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RestfulLanding
 build_property.RootNamespace = RestfulLanding
-build_property.ProjectDir = C:\Users\user\Desktop\c#\RestfulLanding\RestfulLanding\
+build_property.ProjectDir = C:\Users\user\Desktop\c#\RestfulLandingCsharp\RestfulLanding\RestfulLanding\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\c#\RestfulLanding\RestfulLanding
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\c#\RestfulLandingCsharp\RestfulLanding\RestfulLanding
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Home/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Home/Index.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Home/Privacy.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Home/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Home/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Shared/Error.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Objective/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JqZWN0aXZlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Objective/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JqZWN0aXZlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLanding/RestfulLanding/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mzhs8zluii

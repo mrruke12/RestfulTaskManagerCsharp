@@ -10,5 +10,10 @@ namespace RestfulLanding.Database {
 
     public class AppIdentityDbContext : IdentityDbContext<User> {
         public AppIdentityDbContext (DbContextOptions<AppIdentityDbContext> options) : base(options) { }
+        public DbSet<Objective> Objectives { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Objective>().HasOne(t => t.user).WithMany().HasForeignKey(t => t.userId);
+        }
     }
 }

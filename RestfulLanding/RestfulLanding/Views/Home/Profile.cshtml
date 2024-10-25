@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = LocalizationManager.current["ProfilePageTitle"];
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Профиль пользователя</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Личная информация
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Электронная почта</h5>
+                    <p class="card-text">user@example.com</p>
+
+                    <a href="@Url.Action("ChangeEmail")" class="btn btn-primary">Изменить почту</a>
+                    <a href="@Url.Action("ChangePassword")" class="btn btn-warning">Изменить пароль</a>
+                    <form asp-action="DeleteAccount" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Вы уверены, что хотите удалить аккаунт?');">Удалить аккаунт</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Статистика пользователя
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Общее количество задач</h5>
+                    <p class="card-text">10</p>
+
+                    <h5 class="card-title">Общее количество решенных задач</h5>
+                    <p class="card-text">5</p>
+
+                    <h5 class="card-title">График</h5>
+                    <div id="myChart" style="height: 300px;">
+                        @* Здесь будет ваш график *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

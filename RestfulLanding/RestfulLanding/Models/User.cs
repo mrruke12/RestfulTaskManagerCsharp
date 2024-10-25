@@ -5,11 +5,6 @@ namespace RestfulLanding.Models {
         public string Email { get; set; }
         public int Completed { get; set; }
         public int General { get; set; }
-
-        public void Init() {
-            this.General = 0;
-            this.Completed = 0;
-        }
     }
 
     public class UserRegister : User {

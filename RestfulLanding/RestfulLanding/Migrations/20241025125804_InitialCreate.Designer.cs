@@ -11,7 +11,7 @@ using RestfulLanding.Database;
 namespace RestfulLanding.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20241024190715_InitialCreate")]
+    [Migration("20241025125804_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -148,6 +148,39 @@ namespace RestfulLanding.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("RestfulLanding.Models.Objective", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("due")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("priority")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("urgency")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("userId");
+
+                    b.ToTable("Objectives");
+                });
+
             modelBuilder.Entity("RestfulLanding.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -268,6 +301,17 @@ namespace RestfulLanding.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("RestfulLanding.Models.Objective", b =>
+                {
+                    b.HasOne("RestfulLanding.Models.User", "user")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
                 });
 #pragma warning restore 612, 618
         }
