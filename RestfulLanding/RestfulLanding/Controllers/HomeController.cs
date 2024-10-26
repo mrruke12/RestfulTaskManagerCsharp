@@ -11,10 +11,10 @@ namespace RestfulLanding.Controllers {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
         private readonly AppIdentityDbContext _context;
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<UserModel> _signInManager;
+        private readonly UserManager<UserModel> _userManager;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, AppIdentityDbContext context, SignInManager<User> signInManager, UserManager<User> userManager) {
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, AppIdentityDbContext context, SignInManager<UserModel> signInManager, UserManager<UserModel> userManager) {
             _logger = logger;
             _configuration = configuration;
             _context = context;
@@ -23,37 +23,13 @@ namespace RestfulLanding.Controllers {
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(int FilterBy = 0) {
-            FilterBy = Math.Clamp(FilterBy, 0, 6);
-            ViewBag.FilterBy = FilterBy;
-            if (User.Identity.IsAuthenticated) {
-                var currId = _userManager.GetUserId(User);
-                var objectives = _context.Objectives.Where(t => t.userId == currId);
-                
-                switch (FilterBy) {
-                    case 1:
-                        objectives = objectives.OrderBy(o => (int)o.status);
-                        break;
-                    case 2:
-                        objectives = objectives.OrderBy(o => (int)o.priority);
-                        break;
-                    case 3:
-                        objectives = objectives.OrderByDescending(o => (int)o.priority);
-                        break;
-                    case 4:
-                        objectives = objectives.OrderBy(o => (int)o.urgency);
-                        break;
-                    case 5:
-                        objectives = objectives.OrderByDescending(o => (int)o.urgency);
-                        break;
-                    case 6:
-                        objectives = objectives.OrderBy(o => o.due);
-                        break;
-                    default:
-                        objectives = objectives.OrderBy(o => o.description);
-                        break;
-                }
+        public async Task<IActionResult> Index(int SortBy = 0) {
+            SortBy = Math.Clamp(SortBy, 0, 6);
+            ViewBag.SortBy = SortBy;
 
+            if (User.Identity.IsAuthenticated) {
+                var objectives = ObjectivesManager.GetObjectives(_userManager, _context, User);
+                ObjectivesManager.SortObjectives(ref objectives, SortBy);
                 return View(await objectives.ToListAsync());
             }
             return View();
@@ -66,6 +42,7 @@ namespace RestfulLanding.Controllers {
         [HttpPost]
         public IActionResult SetLanguage(string lang, string returnUrl) {
             CookieOptions options = new CookieOptions { Expires = DateTimeOffset.UtcNow.AddDays(7) };
+            
             Response.Cookies.Delete("UserLanguage");
             Response.Cookies.Append("UserLanguage", lang, options);
 
@@ -77,12 +54,6 @@ namespace RestfulLanding.Controllers {
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error() {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [Authorize]
-        [HttpGet]
-        public IActionResult Profile() {
-            return View();
         }
     }
 }

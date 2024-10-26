@@ -11,7 +11,7 @@ using RestfulLanding.Database;
 namespace RestfulLanding.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20241025125804_InitialCreate")]
+    [Migration("20241026084448_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -181,7 +181,7 @@ namespace RestfulLanding.Migrations
                     b.ToTable("Objectives");
                 });
 
-            modelBuilder.Entity("RestfulLanding.Models.User", b =>
+            modelBuilder.Entity("RestfulLanding.Models.UserModel", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -202,9 +202,6 @@ namespace RestfulLanding.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("General")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("LockoutEnabled")
@@ -232,6 +229,9 @@ namespace RestfulLanding.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Total")
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("INTEGER");
@@ -263,7 +263,7 @@ namespace RestfulLanding.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("RestfulLanding.Models.User", null)
+                    b.HasOne("RestfulLanding.Models.UserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -272,7 +272,7 @@ namespace RestfulLanding.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("RestfulLanding.Models.User", null)
+                    b.HasOne("RestfulLanding.Models.UserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -287,7 +287,7 @@ namespace RestfulLanding.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RestfulLanding.Models.User", null)
+                    b.HasOne("RestfulLanding.Models.UserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -296,7 +296,7 @@ namespace RestfulLanding.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("RestfulLanding.Models.User", null)
+                    b.HasOne("RestfulLanding.Models.UserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -305,7 +305,7 @@ namespace RestfulLanding.Migrations
 
             modelBuilder.Entity("RestfulLanding.Models.Objective", b =>
                 {
-                    b.HasOne("RestfulLanding.Models.User", "user")
+                    b.HasOne("RestfulLanding.Models.UserModel", "user")
                         .WithMany()
                         .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Cascade)

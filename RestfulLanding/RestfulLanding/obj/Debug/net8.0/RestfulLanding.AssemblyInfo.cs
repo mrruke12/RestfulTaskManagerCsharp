@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestfulLanding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3e05132f547a86130602be5a8faefcf5c1d0af1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4002516a4fa23f9afb798e1e8250b06672833035")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestfulLanding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestfulLanding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

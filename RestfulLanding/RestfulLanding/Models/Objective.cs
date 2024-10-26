@@ -10,7 +10,7 @@ namespace RestfulLanding.Models {
         [Key]
         public int Id { get; set; }
         public string userId { get; set; }
-        public User user { get; set; }
+        public UserModel user { get; set; }
         public Priority priority { get; set; }
         public Urgency urgency { get; set; }
         public Status status { get; set; }

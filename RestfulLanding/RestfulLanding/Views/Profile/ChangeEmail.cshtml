@@ -1,0 +1,22 @@
+﻿@model ChangeAuthModel
+
+@{
+    ViewData["Title"] = LocalizationManager.current["ChangeEmailPageTitle"];
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">@LocalizationManager.current["ChangeEmailPageTitle"]</h2>
+
+    <form asp-action="ChangeEmail" asp-controller="Profile" method="post" class="card p-4 shadow">
+        <div class="form-group mb-3">
+            <label asp-for="Email" class="form-label">@LocalizationManager.current["AuthNewEmailLabel"]</label>
+            <input asp-for="Email" class="form-control" placeholder="@LocalizationManager.current["AuthEmailPlaceholder"]" required />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <input type="hidden" asp-for="Password" value="" />
+            <input type="submit" value="@LocalizationManager.current["ChangeEmailPageTitle"]" class="btn btn-primary btn-lg" />
+        </div>
+    </form>
+</div>

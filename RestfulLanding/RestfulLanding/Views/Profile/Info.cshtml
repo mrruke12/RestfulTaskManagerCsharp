@@ -1,0 +1,171 @@
+﻿@using Newtonsoft
+@model UserStatisticsModel
+@{
+    ViewData["Title"] = LocalizationManager.current["ProfilePageTitle"];
+}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container mt-5">
+    <h1 class="text-center">@LocalizationManager.current["ProfilePageTitle"]</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    @LocalizationManager.current["PersonalInfoLabel"]
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@LocalizationManager.current["AuthEmailLabel"]</h5>
+                    <p class="card-text">@ViewBag.User.Email</p>
+                    <div class="container d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-wrap justify-content-start">
+                                <form asp-action="Logout" asp-controller="Auth" method="get" class="m-1">
+                                    <button type="submit" class="btn btn-success" style="font-size: 0.7rem;">@LocalizationManager.current["LogoutButton"]</button>
+                                </form>
+
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" class="m-1">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="ChangeEmail" />
+                                    <button type="submit" class="btn btn-primary" style="font-size: 0.7rem;">@LocalizationManager.current["ChangeEmailButton"]</button>
+                                </form>
+
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" class="m-1">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="ChangePassword" />
+                                    <button type="submit" class="btn btn-warning" style="font-size: 0.7rem;">@LocalizationManager.current["ChangePasswordButton"]</button>
+                                </form>
+
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" class="m-1">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="DeleteAccount" />
+                                    <button type="submit" class="btn btn-danger" style="font-size: 0.7rem;">@LocalizationManager.current["DeleteAccountButton"]</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    @LocalizationManager.current["ProfileStatisticsLabel"]
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">@LocalizationManager.current["TotalAmountOfObjectives"]: @ViewBag.User.Total</h6>
+
+                    <h6 class="card-title">@LocalizationManager.current["TotalAmountOfDoneObjectives"]: @ViewBag.User.Completed</h6>
+
+                    <h6 class="card-title">@LocalizationManager.current["StatisticsGraphLabel"]</h6>
+                    <div id="ChartContainer" class="d-flex justify-content-center" style="height: 250px;">
+                        <canvas id="Chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* <div class="container mt-5">
+    <h1 class="text-center">@LocalizationManager.current["ProfilePageTitle"]</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    @LocalizationManager.current["PersonalInfoLabel"]
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@LocalizationManager.current["AuthEmailLabel"]</h5>
+                    <p class="card-text">@ViewBag.User.Email</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column flex-md-row justify-content-between">
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" style="margin: 5px;">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="ChangeEmail" />
+                                    <input type="submit" class="btn btn-primary" value="@LocalizationManager.current["ChangeEmailButton"]" />
+                                </form>
+
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" style="margin: 5px;">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="ChangePassword" />
+                                    <input type="submit" class="btn btn-warning" value="@LocalizationManager.current["ChangePasswordButton"]" />
+                                </form>
+
+                                <form asp-action="ConfirmPassword" asp-controller="Auth" method="get" style="margin: 5px;">
+                                    <input type="hidden" name="Email" value="@ViewBag.User.Email" />
+                                    <input type="hidden" name="nextAction" value="DeleteAccount" />
+                                    <input type="submit" class="btn btn-danger" value="@LocalizationManager.current["DeleteAccountButton"]" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    @LocalizationManager.current["ProfileStatisticsLabel"]
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">@LocalizationManager.current["TotalAmountOfObjectives"]: @ViewBag.User.Total</h6>
+
+                    <h6 class="card-title">@LocalizationManager.current["TotalAmountOfDoneObjectives"]: @ViewBag.User.Completed</h6>
+
+                    <h6 class="card-title">@LocalizationManager.current["StatisticsGraphLabel"]</h6>
+                    <div id="ChartContainer" class="d-flex justify-content-center" style="height: 250px;">
+                        <canvas id="Chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> *@
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () =>{
+        var userStatistics = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+
+        // Ваши данные для графика
+        var ctx = document.getElementById('Chart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar', // Тип графика
+            data: {
+                labels: [userStatistics.noneLabel, userStatistics.inworkLabel, userStatistics.doneLabel, userStatistics.totalLabel], // Метки по оси X
+                datasets: [
+                    {
+                        label: '',
+                        data: [userStatistics.none, userStatistics.inwork, userStatistics.done, userStatistics.total],
+                        backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)', // Красный с прозрачностью 0.5
+                        'rgba(54, 162, 235, 0.6)', // Голубой с прозрачностью 0.6
+                        'rgba(52, 235, 79, 0.7)', // Желтый с прозрачностью 0.7
+                        'rgba(153, 102, 255, 0.5)', // Фиолетовый с прозрачностью 0.5
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)', // Красный без прозрачности
+                        'rgba(54, 162, 235, 1)', // Голубой без прозрачности
+                        'rgba(52, 235, 79, 1)', // Желтый без прозрачности
+                        'rgba(153, 102, 255, 1)', // Фиолетовый без прозрачности
+                    ],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    })
+</script>

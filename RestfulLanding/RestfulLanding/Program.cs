@@ -1,10 +1,6 @@
 using RestfulLanding.Database;
-using BCrypt.Net;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using RestfulLanding.Middleware;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,18 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 await RuLocalization.Instance().Initialize();
 await EnLocalization.Instance().Initialize();
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
-
-//builder.Services.AddDbContext<AppDbContext>(options => {
-//    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-//});
 
 builder.Services.AddDbContext<AppIdentityDbContext>(options => {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<UserModel, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
 
 builder.Services.ConfigureApplicationCookie(options => {
     options.LoginPath = "/Home/Login";
@@ -55,6 +46,8 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<ProfileMiddleware>();
 
 app.MapControllerRoute(
     name: "default",

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\c#\RestfulLandingCsharp\RestfulLanding\RestfulLanding
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Auth/ConfirmPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,16 +38,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Home/Profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Objective/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JqZWN0aXZlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Objective/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JqZWN0aXZlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Profile/ChangeEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Profile/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Profile/DeleteAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxEZWxldGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Profile/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/c\#/RestfulLandingCsharp/RestfulLanding/RestfulLanding/Views/Shared/Error.cshtml]

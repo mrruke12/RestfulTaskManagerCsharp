@@ -192,7 +192,7 @@ $.validator.addMethod( "bic", function( value, element ) {
  *
  *   A. Corporations
  *   B. LLCs
- *   C. General partnerships
+ *   C. Total partnerships
  *   D. Companies limited partnerships
  *   E. Communities of goods
  *   F. Cooperative Societies
@@ -499,7 +499,7 @@ $.validator.addMethod( "creditcard", function( value, element ) {
 	value = value.replace( /\D/g, "" );
 
 	// Basing min and max length on
-	// https://dev.ean.com/general-info/valid-card-types/
+	// https://dev.ean.com/Total-info/valid-card-types/
 	if ( value.length < 13 || value.length > 19 ) {
 		return false;
 	}

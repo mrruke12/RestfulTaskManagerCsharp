@@ -6,8 +6,8 @@
 }
 
 @functions {
-    public string GetSelected(int? filterBy, int value) {
-        return filterBy == value ? "selected" : "";
+    public string GetSelected(int? SortBy, int value) {
+        return SortBy == value ? "selected" : "";
     }
 }
 
@@ -41,16 +41,16 @@
             <h2>@LocalizationManager.current["ListOfObjectivesTitle"]</h2>
 
             <form method="get" class="mb-3">
-                <label for="FilterBy">@LocalizationManager.current["FilterLabel"]</label>
-                <input type="hidden" id="FilterByValue" value="@ViewBag.FilterBy" />
-                <select name="FilterBy" id="FilterBy" class="form-control" onchange="this.form.submit()">
-                    <option value="0">@LocalizationManager.current["FilterByAlphabet"]</option>
-                    <option value="1">@LocalizationManager.current["FilterByStatus"]</option>
-                    <option value="2">@LocalizationManager.current["FilterByPriorityAscending"]</option>
-                    <option value="3">@LocalizationManager.current["FilterByPriorityDescending"]</option>
-                    <option value="4">@LocalizationManager.current["FilterByUrgencyAscending"]</option>
-                    <option value="5">@LocalizationManager.current["FilterByUrgencyDescending"]</option>
-                    <option value="6">@LocalizationManager.current["FilterByDue"]</option>
+                <label for="SortBy">@LocalizationManager.current["FilterLabel"]</label>
+                <input type="hidden" id="SortByValue" value="@ViewBag.SortBy" />
+                <select name="SortBy" id="SortBy" class="form-control" onchange="this.form.submit()">
+                    <option value="0">@LocalizationManager.current["SortByAlphabet"]</option>
+                    <option value="1">@LocalizationManager.current["SortByStatus"]</option>
+                    <option value="2">@LocalizationManager.current["SortByPriorityAscending"]</option>
+                    <option value="3">@LocalizationManager.current["SortByPriorityDescending"]</option>
+                    <option value="4">@LocalizationManager.current["SortByUrgencyAscending"]</option>
+                    <option value="5">@LocalizationManager.current["SortByUrgencyDescending"]</option>
+                    <option value="6">@LocalizationManager.current["SortByDue"]</option>
                 </select>
             </form>
 
@@ -101,7 +101,7 @@
                                     <form asp-action="Edit" asp-controller="Objective" method="get" style="margin-right: 5px;">
                                         <input name="ReturnUrl" type="hidden" value="@(Context.Request.Path + Context.Request.QueryString)" />
                                         <input name="objectiveId" type="hidden" value="@task.Id" />
-                                        <input type="submit" class="btn btn-edit btn-danger" value="@LocalizationManager.current["EditObjectiveButton"]" />
+                                        <input type="submit" class="btn btn-edit btn-primary" value="@LocalizationManager.current["EditObjectiveButton"]" />
                                     </form>
 
                                     <form asp-action="Delete" asp-controller="Objective" method="post" onsubmit="return confirm(@LocalizationManager.current["AreYouSureToDelete"])">
@@ -118,8 +118,8 @@
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
-                const val = document.querySelector("#FilterByValue").value
-                document.querySelector("#FilterBy").querySelectorAll("option").forEach(e => {
+                const val = document.querySelector("#SortByValue").value
+                document.querySelector("#SortBy").querySelectorAll("option").forEach(e => {
                     if (e.value == val) e.setAttribute("selected", "selected")
                 })
             })

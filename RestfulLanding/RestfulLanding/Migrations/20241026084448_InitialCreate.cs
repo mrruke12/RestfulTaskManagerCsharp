@@ -32,7 +32,7 @@ namespace RestfulLanding.Migrations
                     Id = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", maxLength: 256, nullable: false),
                     Completed = table.Column<int>(type: "INTEGER", nullable: false),
-                    General = table.Column<int>(type: "INTEGER", nullable: false),
+                    Total = table.Column<int>(type: "INTEGER", nullable: false),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedEmail = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),

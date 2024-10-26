@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using RestfulLanding.Database;
 
 namespace RestfulLanding.Controllers {
@@ -10,10 +11,10 @@ namespace RestfulLanding.Controllers {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
         private readonly AppIdentityDbContext _context;
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<UserModel> _signInManager;
+        private readonly UserManager<UserModel> _userManager;
 
-        public ObjectiveController(ILogger<HomeController> logger, IConfiguration configuration, AppIdentityDbContext context, SignInManager<User> signInManager, UserManager<User> userManager) {
+        public ObjectiveController(ILogger<HomeController> logger, IConfiguration configuration, AppIdentityDbContext context, SignInManager<UserModel> signInManager, UserManager<UserModel> userManager) {
             _logger = logger;
             _configuration = configuration;
             _context = context;
@@ -30,26 +31,14 @@ namespace RestfulLanding.Controllers {
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create(Objective objective) {
-            if (string.IsNullOrEmpty(objective.description)) {
-                ModelState.AddModelError("description", LocalizationManager.current["ObjectiveDescriptionRequired"]);
-            }
+            UserModel currentUser = await _userManager.GetUserAsync(User);
 
-            if (objective.due == null || objective.due == default || string.IsNullOrEmpty(objective.due.ToString())) {
-                objective.due = DateTime.MaxValue;
-            }
+            Console.WriteLine("___________________________________________________________________________");
+            Console.WriteLine(currentUser);
 
-            objective.user = await _userManager.GetUserAsync(User);
-            objective.userId = objective.user.Id;
+            if (!ObjectivesManipulations.ValidateNewObjective(ModelState, ref objective, ref currentUser)) return View(objective);
 
-            ModelState.Remove("user");
-            ModelState.Remove("userId");
-
-            foreach (var problem in ModelState) foreach (var a in problem.Value.Errors) Console.WriteLine(a.ErrorMessage);
-
-            if (!ModelState.IsValid) return View(objective);
-
-            await _context.Objectives.AddAsync(objective);
-            await _context.SaveChangesAsync();
+            await ObjectivesManipulations.PushNewObjective(_context, objective);
 
             return RedirectToAction("Index", "Home");
         }
@@ -59,10 +48,9 @@ namespace RestfulLanding.Controllers {
         public async Task<IActionResult> Delete(string ReturnUrl, int objectiveId) {
             var objective = await _context.Objectives.FirstOrDefaultAsync(o => o.Id == objectiveId);
 
-            if (objective != null) {
-                _context.Objectives.Remove(objective);
-                await _context.SaveChangesAsync();
-            }
+            if (!await ObjectivesManipulations.DeleteObjective(_context, objective)) 
+                throw new NullReferenceException($"The objective with id {objectiveId} either does not exist or couldn't be found while trying to delete it");
+
             if (!string.IsNullOrEmpty(ReturnUrl)) return Redirect(ReturnUrl);
             return RedirectToAction("Index", "Home");
         }
@@ -86,30 +74,11 @@ namespace RestfulLanding.Controllers {
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> Edit(Objective objective, string ReturnUrl, int objectiveId) {
-            if (string.IsNullOrEmpty(objective.description)) {
-                ModelState.AddModelError("description", LocalizationManager.current["ObjectiveDescriptionRequired"]);
-            }
+            if (!ObjectivesManipulations.ValidateEditObjective(ModelState, ref objective)) return View(objective);
 
-            if (objective.due == null || objective.due == default || string.IsNullOrEmpty(objective.due.ToString())) {
-                objective.due = DateTime.MaxValue;
-            }
+            var existingObjective = await _context.Objectives.FirstOrDefaultAsync(o => o.Id == objectiveId);
 
-            ModelState.Remove("user");
-            ModelState.Remove("userId");
-
-            foreach (var problem in ModelState) foreach (var a in problem.Value.Errors) Console.WriteLine(a.ErrorMessage);
-
-            if (!ModelState.IsValid) return View(objective);
-
-            var existing = await _context.Objectives.FirstOrDefaultAsync(o => o.Id == objectiveId);
-
-            existing.description = objective.description;
-            existing.priority = objective.priority;
-            existing.urgency = objective.urgency;
-            existing.due = objective.due;
-            existing.status = objective.status;
-
-            await _context.SaveChangesAsync();
+            await ObjectivesManipulations.EditObjective(_context, objective, existingObjective);
 
             if (!string.IsNullOrEmpty(ReturnUrl)) return Redirect(ReturnUrl);
             return RedirectToAction("Index", "Home");

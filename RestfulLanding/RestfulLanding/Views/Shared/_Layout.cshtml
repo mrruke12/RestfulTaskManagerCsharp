@@ -26,7 +26,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Objective" asp-action="Create">@LocalizationManager.current["CreatePageTitle"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Profile">@LocalizationManager.current["ProfilePageTitle"]</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Info">@LocalizationManager.current["ProfilePageTitle"]</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +44,7 @@
             <a href="https://github.com/mrruke12" target="_blank">&copy; 2024 - RestfulLanding</a>
         </div>
 
-        <div style="width: 8%; position: absolute; right: 15px;">
+        <div style="width: 100px; position: absolute; right: 15px;">
             <form method="post" asp-controller="Home" asp-action="SetLanguage">
             <select name="lang" class="text-center form-control" onchange="this.form.submit()">
                 @foreach (Localization localization in LocalizationManager.localizations) {

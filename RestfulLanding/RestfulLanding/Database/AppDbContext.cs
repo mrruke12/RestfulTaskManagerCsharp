@@ -8,7 +8,7 @@ namespace RestfulLanding.Database {
     //    //public DbSet<Objective> Objectives { get; set; }
     //}
 
-    public class AppIdentityDbContext : IdentityDbContext<User> {
+    public class AppIdentityDbContext : IdentityDbContext<UserModel> {
         public AppIdentityDbContext (DbContextOptions<AppIdentityDbContext> options) : base(options) { }
         public DbSet<Objective> Objectives { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder) {

@@ -15,7 +15,7 @@
         </div>
 
         <div class="form-group mb-3">
-            <label asp-for="Password" class="form-label">@LocalizationManager.current["AuthPasswordLable"]</label>
+            <label asp-for="Password" class="form-label">@LocalizationManager.current["AuthPasswordLabel"]</label>
             <input asp-for="Password" class="form-control" placeholder="@LocalizationManager.current["AuthPasswordPlaceholder"]" required />
             <span asp-validation-for="Password" class="text-danger"></span>
         </div>
@@ -23,7 +23,7 @@
         <div class="text-center">
             <input type="hidden" name="ReturnUrl" value="@ViewBag.ReturnUrl" />
             <input type="submit" value="@LocalizationManager.current["LoginPageTitle"]" class="btn btn-primary btn-lg" />
-            <input type="button" value="@LocalizationManager.current["DontHaveAccount"]" class="btn btn-secondary btn-lg" onclick="window.location.href='@Url.ActionLink("Register", "Home", new {ViewBag.ReturnUrl})'" />
+            <input type="button" value="@LocalizationManager.current["DontHaveAccount"]" class="btn btn-secondary btn-lg" onclick="window.location.href='@Url.ActionLink("Register", "Auth", new {ViewBag.ReturnUrl})'" />
         </div>
     </form>
 </div>
