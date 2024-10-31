@@ -1,66 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\",
+  "WorkspaceRootPath": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\profile\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\profile\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\profile\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\models\\objectivesmanipulations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\models\\objectivesmanipulations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\models\\objectivesmanipulations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\models\\uservalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\models\\uservalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\models\\uservalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\localization\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\localization\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\localization\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\localization\\ru.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\localization\\ru.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\localization\\ru.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\auth\\confirmpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\auth\\confirmpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\auth\\confirmpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\profile\\deleteaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\profile\\deleteaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\profile\\deleteaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\profile\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\profile\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\profile\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\mrruk\\desktop\\c#\\restfultaskmanagercsharp\\restfullanding\\restfullanding\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|c:\\users\\user\\desktop\\c#\\restfullandingcsharp\\restfullanding\\restfullanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0C8F96-CD9D-49A9-9365-F1B2FA418F3A}|RestfulLanding\\RestfulLanding.csproj|solutionrelative:restfullanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,200 +78,200 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RU.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Localization\\RU.json",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Localization\\RU.json",
               "RelativeDocumentMoniker": "RestfulLanding\\Localization\\RU.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Localization\\RU.json",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Localization\\RU.json",
               "RelativeToolTip": "RestfulLanding\\Localization\\RU.json",
               "ViewState": "AgIAABkAAAAAAAAAAAAAAFEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-24T12:38:27.42Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EN.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Localization\\EN.json",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Localization\\EN.json",
               "RelativeDocumentMoniker": "RestfulLanding\\Localization\\EN.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Localization\\EN.json",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Localization\\EN.json",
               "RelativeToolTip": "RestfulLanding\\Localization\\EN.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-24T12:36:27.17Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "RestfulLanding\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Properties\\launchSettings.json",
+              "RelativeToolTip": "RestfulLanding\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-31T07:18:41.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "RestfulLanding\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "RestfulLanding\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGcAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-26T13:37:01.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ObjectivesManipulations.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\ObjectivesManipulations.cs",
-              "RelativeDocumentMoniker": "RestfulLanding\\Models\\ObjectivesManipulations.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\ObjectivesManipulations.cs",
-              "RelativeToolTip": "RestfulLanding\\Models\\ObjectivesManipulations.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T13:34:14.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ConfirmPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
               "RelativeDocumentMoniker": "RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
               "RelativeToolTip": "RestfulLanding\\Views\\Auth\\ConfirmPassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T13:20:35.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:20:35.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DeleteAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
               "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
               "RelativeToolTip": "RestfulLanding\\Views\\Profile\\DeleteAccount.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T12:53:53.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T12:53:53.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\User.cs",
               "RelativeDocumentMoniker": "RestfulLanding\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\User.cs",
               "RelativeToolTip": "RestfulLanding\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:30:59.979Z",
+              "WhenOpened": "2024-10-26T12:30:59.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
+              "RelativeToolTip": "RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T12:28:53.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Program.cs",
+              "RelativeDocumentMoniker": "RestfulLanding\\Program.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Program.cs*",
+              "RelativeToolTip": "RestfulLanding\\Program.cs*",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:59:39.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
-              "RelativeToolTip": "RestfulLanding\\Views\\Profile\\ChangePassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T12:28:53.606Z",
-              "EditorCaption": ""
+              "Title": "ObjectivesManipulations.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\ObjectivesManipulations.cs",
+              "RelativeDocumentMoniker": "RestfulLanding\\Models\\ObjectivesManipulations.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\ObjectivesManipulations.cs",
+              "RelativeToolTip": "RestfulLanding\\Models\\ObjectivesManipulations.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T13:34:14.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserValidators.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\UserValidators.cs",
+              "RelativeDocumentMoniker": "RestfulLanding\\Models\\UserValidators.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Models\\UserValidators.cs",
+              "RelativeToolTip": "RestfulLanding\\Models\\UserValidators.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T11:06:46.078Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserValidators.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\UserValidators.cs",
-              "RelativeDocumentMoniker": "RestfulLanding\\Models\\UserValidators.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Models\\UserValidators.cs",
-              "RelativeToolTip": "RestfulLanding\\Models\\UserValidators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T11:06:46.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ChangeEmail.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
               "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
               "RelativeToolTip": "RestfulLanding\\Views\\Profile\\ChangeEmail.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T10:56:27.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T10:56:27.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "RestfulLanding\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\ProfileController.cs",
               "RelativeToolTip": "RestfulLanding\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAUwDwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T10:24:44.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "RestfulLanding\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "RestfulLanding\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFIAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T10:41:51.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Info.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\Info.cshtml",
-              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\Info.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\Info.cshtml",
-              "RelativeToolTip": "RestfulLanding\\Views\\Profile\\Info.cshtml",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAAAJoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T10:28:50.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T10:24:44.325Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "RestfulLanding\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBkAAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T09:07:51.126Z",
-              "EditorCaption": ""
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "RestfulLanding\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "RestfulLanding\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFIAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T10:41:51.059Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Program.cs",
-              "RelativeDocumentMoniker": "RestfulLanding\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\Program.cs",
-              "RelativeToolTip": "RestfulLanding\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwDEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T08:59:39.297Z",
-              "EditorCaption": ""
+              "Title": "Info.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\Info.cshtml",
+              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Profile\\Info.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Profile\\Info.cshtml",
+              "RelativeToolTip": "RestfulLanding\\Views\\Profile\\Info.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAJoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T10:28:50.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "RestfulLanding\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "RestfulLanding\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBkAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T09:07:51.126Z"
             }
           ]
         }

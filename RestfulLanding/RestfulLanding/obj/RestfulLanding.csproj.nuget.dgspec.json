@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj": {}
+    "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj": {
+    "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
+        "projectUniqueName": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
         "projectName": "RestfulLanding",
-        "projectPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c#\\RestfulLandingCsharp\\RestfulLanding\\RestfulLanding\\obj\\",
+        "projectPath": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\RestfulLanding.csproj",
+        "packagesPath": "C:\\Users\\mrruk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrruk\\Desktop\\c#\\RestfulTaskManagerCsharp\\RestfulLanding\\RestfulLanding\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mrruk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
